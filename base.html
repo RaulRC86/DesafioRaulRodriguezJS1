@@ -20,26 +20,26 @@
             <p>Cantidad:
                 <span class="cantidad">0</span>
                 <button onclick="
-                let cantidad = document.querySelector('.cantidad');
-                let cuenta = Number(cantidad.innerHTML);
+                var cantidad = document.querySelector('.cantidad');
+                var cuenta = Number(cantidad.innerHTML);
                 cuenta = cuenta + 1;
                 cantidad.innerHTML = cuenta;
                 
-                let precio = 400000;
-                let totalSpan = document.querySelector('.valor-total');
-                let total = precio * cuenta;
+                var precio = 400000;
+                var totalSpan = document.querySelector('.valor-total');
+                var total = precio * cuenta;
                 totalSpan.innerHTML = total;
                 ">+</button>
 
                 <button onclick="
-                let cantidad = document.querySelector('.cantidad');
-                let cuenta = Number(cantidad.innerHTML);
+                var cantidad = document.querySelector('.cantidad');
+                var cuenta = Number(cantidad.innerHTML);
                 cuenta = cuenta - 1;
                 cantidad.innerHTML = cuenta;
                 
-                let precio = 400000;
-                let totalSpan = document.querySelector('.valor-total');
-                let total = precio * cuenta;
+                var precio = 400000;
+                var totalSpan = document.querySelector('.valor-total');
+                var total = precio * cuenta;
                 totalSpan.innerHTML = total;
                 ">-</button>
             </p>
