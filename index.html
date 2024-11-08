@@ -1,52 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desafío 1 - JavaScript</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
 
-<body>
-
+  <body>
     <section>
-        <div class="card">
-            <div class="img-card"></div>
-            <h6>Laptop Gamer AMD</h6>
-            <p>Precio base: $<span class="precio-inicial">400000</span>  </p>
-        
-            <p>Cantidad:
-                <span class="cantidad">0</span>
-                <button onclick="
-                var cantidad = document.querySelector('.cantidad');
-                var cuenta = Number(cantidad.innerHTML);
-                cuenta = cuenta + 1;
-                cantidad.innerHTML = cuenta;
-                
-                var precio = 400000;
-                var totalSpan = document.querySelector('.valor-total');
-                var total = precio * cuenta;
-                totalSpan.innerHTML = total;
-                ">+</button>
+      <div class="card">
+        <div class="img-card"></div>
+        <h6>Laptop Gamer AMD</h6>
+        <p>Precio base: $<span class="precio-inicial">400000</span></p>
 
-                <button onclick="
-                var cantidad = document.querySelector('.cantidad');
-                var cuenta = Number(cantidad.innerHTML);
-                cuenta = cuenta - 1;
-                cantidad.innerHTML = cuenta;
-                
-                var precio = 400000;
-                var totalSpan = document.querySelector('.valor-total');
-                var total = precio * cuenta;
-                totalSpan.innerHTML = total;
-                ">-</button>
-            </p>
-        </div>
+        <p>
+          Cantidad:
+          <span class="cantidad">0</span>
+          <button class="sumar">+</button>
+
+          <button class="restar">-</button>
+        </p>
+      </div>
     </section>
     <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total">0</span> </p>
+      <p>Total a pagar: $<span class="valor-total">0</span></p>
     </div>
-</body>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
