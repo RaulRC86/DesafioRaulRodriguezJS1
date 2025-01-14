@@ -9,3 +9,5 @@ export function sumar() {
     let total = precio * cuenta;
     totalSpan.innerHTML = total;
   }
+
+  
